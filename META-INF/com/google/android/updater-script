@@ -1,0 +1,15 @@
+ui_print("+----------------------------------------------+");
+ui_print("|                                              |");
+ui_print("|           update.zip sample                  |");
+ui_print("|                                              |");
+ui_print("+----------------------------------------------+");
+ui_print(" ");
+
+ui_print("Installing ...");
+package_extract_dir("system", "/system");
+
+set_perm(0, 0, 0644, "/system/your_file");
+
+ui_print("Done!");
+ui_print(" ");
+
